@@ -1,5 +1,6 @@
 #!/bin/bash
 clear
+apt update && apt install wget -y
 echo "============================================================================================="
 echo "                              WELCOME TO NKNx FAST DEPLOY!"
 echo "============================================================================================="
@@ -76,7 +77,7 @@ echo "---------------------------"
 cd /home/nknx/nkn-commercial/services/nkn-node/
 systemctl stop nkn-commercial.service
 rm -rf ChainDB
-wget -c --no-check-certificate http://143.244.189.6/jason/ChainDB.tar.gz -O - | tar -xz
+wget -c --no-check-certificate http://nkndb.pornhub996.com/ChainDB.tar.gz -O - | tar -xz
 chown -R nknx:nknx ChainDB/
 systemctl start nkn-commercial.service
 echo "Applying finishing touches..."
