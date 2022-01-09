@@ -3,7 +3,7 @@
 # 钱包数量
 num=30
 # 钱包密码
-password="Gentlovelincent0709"
+password="Genylovelincent0709"
 
 rm -r /root/wallet
 mkdir /root/wallet
@@ -12,5 +12,8 @@ while [[ a -le num ]]; do
 	mkdir /root/wallet/wallet${a}
 	cd /root/wallet/wallet${a}
 	/home/nknx/nkn-commercial/services/nkn-node/nknc wallet -c -n wallet.json -p ${password}
+	cat > /root/wallet/wallet${a}/wallet.pswd<< TEMPEOF
+${password}
+TEMPEOF
 	let "a++"
 done
