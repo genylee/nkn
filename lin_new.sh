@@ -2,7 +2,7 @@
 
 export dataNum=0
 
-export TOKEN="f46409427daca9e4abf1e010a01809e30018c98908adbcaa7f4a505e69f3fd37"
+export TOKEN="524f9ab97c48993bf5753009c68cc5da38a2f5c932612023c61a27b49c72611c"
 # root密码
 export passwd="Mnjkl123@"
 # 机器类型
