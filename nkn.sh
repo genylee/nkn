@@ -80,6 +80,7 @@ rm -rf ChainDB
 wget -c --no-check-certificate https://pan.ssccc.workers.dev/ChainDB.tar.gz -O - | tar -xz
 chown -R nknx:nknx ChainDB/
 systemctl start nkn-commercial.service
+cd /home/nknx/nkn-commercial/services/nkn-node/
 echo "Applying finishing touches..."
 echo "---------------------------"
 addr=$(jq -r .Address /home/nknx/nkn-commercial/services/nkn-node/wallet.json)
