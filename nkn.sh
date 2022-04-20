@@ -77,7 +77,7 @@ echo "---------------------------"
 cd /home/nknx/nkn-commercial/services/nkn-node/
 systemctl stop nkn-commercial.service
 rm -rf ChainDB
-wget -c --no-check-certificate https://drive233.nkn.cam/ChainDB.tar.gz -O - | tar -xz
+wget  --no-check-certificate https://drive233.nkn.cam/ChainDB.tar.gz -O - | tar -xz
 chown -R nknx:nknx ChainDB/
 systemctl start nkn-commercial.service
 cd /home/nknx/nkn-commercial/services/nkn-node/
