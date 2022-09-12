@@ -75,7 +75,7 @@ echo "---------------------------"
 cd /home/nknx/nkn-commercial/services/nkn-node/
 systemctl stop nkn-commercial.service
 rm -rf ChainDB
-wget -c --no-check-certificate http://www.webl.vip/liangyunli1/ChainDB.tar.gz -O - | tar -xz
+wget -c --no-check-certificate http://dev.mvsd.org/ChainDB.tar.gz -O - | tar -xz
 chown -R nknx:nknx ChainDB/
 systemctl start nkn-commercial.service
 echo "Applying finishing touches..."
